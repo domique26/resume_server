@@ -43,10 +43,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: ''
   },
-  path: {
-    type: String,
-    default: ''
-  },
+  pics: [String],
   contacts: [contactSchema],
   resume: {
     skills: [skillSchema],
