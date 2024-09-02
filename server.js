@@ -24,5 +24,5 @@ mongoose.connect(`mongodb+srv://domikkozlowski26:${process.env.MONGO_DB_PASSWORD
   });
 })
 .catch((err) => {
-  res.status(500).json({message: error.message});
+  console.error(err);
 });
